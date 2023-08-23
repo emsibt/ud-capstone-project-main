@@ -5,6 +5,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
+    print(
+        "<h1 style='text-align: center;'>Hello World, my name is baott. Welcome to my Cloud DevOps Engineer Capstone Project!</h1> "
+    )
+    return
     return (
         "<h1 style='text-align: center;'>Hello World, my name is BaoTran."
         " Welcome to my Cloud DevOps Engineer Capstone Project!</h1>"
