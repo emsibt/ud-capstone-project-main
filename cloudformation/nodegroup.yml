@@ -1,5 +1,5 @@
 Description: >
-  MinhDoD1 - Capstone Project
+  Baott - Capstone Project
   Creates the nodegroup for the Amazon EKS Cluster
 Parameters:
   EnvironmentName:
@@ -55,7 +55,6 @@ Resources:
         - !Sub "arn:${AWS::Partition}:iam::aws:policy/AmazonEKS_CNI_Policy"
         - !Sub "arn:${AWS::Partition}:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
       Path: /
-
 
   NodeGroup:
     Type: AWS::EKS::Nodegroup
